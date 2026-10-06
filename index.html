@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RideNova - Fare Estimator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <header>
+        <h1>RideNova</h1>
+        <p>Estimate your ride fare</p>
+    </header>
+
+    <main class="card">
+
+        <h2>Book Your Ride</h2>
+
+        <div class="input-group">
+            <label for="pickup">Pickup Location</label>
+            <select id="pickup">
+                <option value="">Select pickup</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="drop">Drop Location</label>
+            <select id="drop">
+                <option value="">Select drop</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label>Choose Vehicle</label>
+
+            <div class="vehicles">
+
+                <button class="vehicle active" data-type="Bike" type="button">
+                    <span>🏍️</span>
+                    <strong>Bike</strong>
+                    <small>₹8/km</small>
+                </button>
+
+                <button class="vehicle" data-type="Auto" type="button">
+                    <span>🛺</span>
+                    <strong>Auto</strong>
+                    <small>₹12/km</small>
+                </button>
+
+                <button class="vehicle" data-type="Cab" type="button">
+                    <span>🚕</span>
+                    <strong>Cab</strong>
+                    <small>₹18/km</small>
+                </button>
+
+            </div>
+        </div>
+
+        <p class="validation-msg" id="validationMessage"></p>
+
+        <button class="estimate-btn" id="estimateBtn" type="button">
+            Estimate Fare
+        </button>
+
+        <div class="comparison-panel" id="comparisonPanel">
+            <div id="comparisonResults"></div>
+        </div>
+
+        <div class="result" id="result">
+
+            <div class="result-header">
+                <h3>Estimated Fare</h3>
+                <span id="vehicleResult">Bike</span>
+            </div>
+
+            <p class="route-summary" id="routeSummary">Route: —</p>
+
+            <div class="fare">
+                ₹<span id="fare">0</span>
+            </div>
+
+            <div class="details">
+                <p>
+                    <span>Distance</span>
+                    <strong id="distanceResult">0 km</strong>
+                </p>
+
+                <p>
+                    <span>Estimated Time</span>
+                    <strong id="timeResult">0 min</strong>
+                </p>
+            </div>
+
+            <button class="book-btn" id="bookBtn" type="button">
+                Book Ride
+            </button>
+
+            <div class="booking-status" id="bookingStatus">
+                <h4>Live Booking Status</h4>
+                <div class="status-timeline" id="statusTimeline"></div>
+            </div>
+
+            <p class="success" id="successMessage"></p>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="dataset.js"></script>
+<script src="comparison.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
