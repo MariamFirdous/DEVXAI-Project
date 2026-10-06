@@ -1,8 +1,8 @@
 # RideNova Fare Estimator Demo
 
-A clean, responsive front-end prototype inspired by the official [RideNova website](https://www.ridenova.in/). This project demonstrates a Hyderabad-focused ride fare estimator with transparent pricing, vehicle comparison, and a live booking-status experience.
+A clean, responsive inspired by the official [RideNova website](https://www.ridenova.in/). This project demonstrates a Hyderabad-focused ride fare estimator with transparent pricing, vehicle comparison, and a live booking-status experience.
 
-> Important: this project uses a static dataset for all route distances, Hyderabad locations, and fare values. It is intentionally built as a front-end demo and does not connect to a live backend or official RideNova services.
+> Important: this project uses a static dataset for all route distances, Hyderabad locations, and fare values. It is intentionally built as a demo and does not connect to a live backend or official RideNova services.
 
 ## Overview
 
